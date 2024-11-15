@@ -1,4 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    document.body.innerHTML = ` 
+<body>
+    <!-- Navbar  -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="./assets/favicon.jpg" alt="icon">
+        </div>
+        <div class="text">
+            <h1>QR Code Generator</h1>
+            <p>create your own qr code for free</p>
+        </div>
+    </nav>
+    <!--  -->
+
+    <!-- Container -->
+    <div class="container">
+        <p>Enter your text or URL</p>
+        <input type="text" placeholder="Text or URL">
+        <div class="imgBox"></div>
+
+        <button>Generate QR Code</button>
+    </div>
+    <!--  -->
+    <script src="main.js"></script>
+</body>
+`;
     const input = document.querySelector("input");
     const button = document.querySelector("button");
     const imgBox = document.querySelector(".imgBox");
